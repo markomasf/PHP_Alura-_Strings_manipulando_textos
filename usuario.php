@@ -14,7 +14,7 @@ echo substr($email2, $posicao + 1) . PHP_EOL;
 
 $senha = "12345678";
 
-$tamanho = strlen($senha);
+$tamanho = mb_strlen($senha);
 
 if($tamanho < 8){
     echo "Senha inválida" . PHP_EOL;
@@ -25,5 +25,5 @@ if($tamanho < 8){
 // strtoupper (deixar em letras MAIUSCULAS) e strtolower (deixar em letras minusculas)
 var_dump(strtoupper(substr($email2, 0 , $posicao)));
 
-$minusculas = "TESTE DE CONVERSAO";
-var_dump(strtolower($minusculas));
+$minusculas = "TESTE DE CONVERSÃO";
+var_dump(mb_strtolower($minusculas));
