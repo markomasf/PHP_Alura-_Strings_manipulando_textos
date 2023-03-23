@@ -21,3 +21,5 @@ if($tamanho < 8){
 }else{
     echo "Senha correta" . PHP_EOL;
 }
+
+var_dump(strtoupper(substr($email2, 0 , $posicao)));
