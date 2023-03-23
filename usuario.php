@@ -22,4 +22,8 @@ if($tamanho < 8){
     echo "Senha correta" . PHP_EOL;
 }
 
+// strtoupper (deixar em letras MAIUSCULAS) e strtolower (deixar em letras minusculas)
 var_dump(strtoupper(substr($email2, 0 , $posicao)));
+
+$minusculas = "TESTE DE CONVERSAO";
+var_dump(strtolower($minusculas));
