@@ -27,3 +27,9 @@ var_dump(strtoupper(substr($email2, 0 , $posicao)));
 
 $minusculas = "TESTE DE CONVERSÃO";
 var_dump(mb_strtolower($minusculas));
+
+$nomes = "Marco Fonseca";
+
+[$nome, $sobrenome] = explode(' ', $nomes);
+echo "Nome: " . $nome . PHP_EOL;
+echo "Sobrenome: " . $sobrenome . PHP_EOL;
