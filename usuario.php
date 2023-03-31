@@ -33,3 +33,15 @@ $nomes = "Marco Fonseca";
 [$nome, $sobrenome] = explode(' ', $nomes);
 echo "Nome: " . $nome . PHP_EOL;
 echo "Sobrenome: " . $sobrenome . PHP_EOL;
+
+//trim para remover strings espaços no inicio ou no fim
+
+$testeTrim = " marco antonio fonseca ";
+
+var_dump(trim($testeTrim)) . PHP_EOL;
+
+//informando quais caracteres remover
+
+$testeTrim2 = ", marco antonio fonseca ,";
+
+var_dump(trim($testeTrim2, ',')) . PHP_EOL;
